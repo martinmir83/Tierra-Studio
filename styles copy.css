@@ -1,0 +1,958 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding-top: 80px; /* Space for fixed navbar */
+
+}
+
+
+.raleway-uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Add a black background color to the top navigation */
+nav{
+  background-color: rgb(255, 255, 255);
+  position: sticky; /* Make the navbar sticky */
+  position: -webkit-sticky; /* Safari */
+  top: 0; /* Stick to the top */
+  z-index: 9999; /* Ensure it stays above other content */
+  justify-content: space-between; /* Space out items */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding: 0px 20px; /* Add some padding */
+  margin-top: -80px; /* Space for fixed navbar */
+  height: 80px; /* Set a fixed height for the navbar */
+
+}
+
+nav ul{
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  padding-left: 20px; /* Add padding to the left */
+
+}
+nav li{
+  height: 50px; /* Set a fixed height for the list items */
+  position: relative; /* Set position to relative for proper alignment */
+}
+
+nav a{
+  height: 100%; /* Set a fixed height for the links */
+  padding: 0 20px; /* Add padding to the left and right */
+  text-decoration: none; /* Remove underline from links */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  color: rgb(44, 44, 44); /* Text color */
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; /* Font size for the links */
+  display: block; /* Make the anchor tag a block element */
+  width: 100%; /* Fill the entire width of the list item */
+  text-align: center; /* Center the text */
+
+}
+
+nav a:hover {
+  color: rgb(135, 136, 135); /* Change color on hover */
+}
+nav li:first-child{
+  margin-left: 40px; /* Push the first item to the left */
+  padding-right: 245px; /* Add padding to the left */
+}
+nav li:first-child a {
+  font-size: 18px; /* Font size for the last link */
+  font-family: "Raleway", sans-serif; /* Font family for the last link */
+}
+
+.sidebar {
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px; /* Adjust width as needed */
+  z-index: 999; /* Ensure it stays above other content */
+  background-color: rgb(255, 255, 255); /* Background color */
+  backdrop-filter: blur(10px); /* Optional: blur effect */
+  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  display: none;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start;
+
+}
+.sidebar li {
+  width: 100%; /* Full width */
+
+}
+.sidebar a {
+  width: 100%; /* Full width */
+}
+.menu-button{
+  display: none;
+  position:fixed;
+}
+
+.logo {
+  height: 130px; /* Adjust the height to make it smaller */
+  width: auto; /* Maintain aspect ratio */
+  display: inline-block;
+  vertical-align: middle; /* Aligns the logo with the navbar links */
+  padding: 0%; /* Removes any padding */
+  margin-bottom: 0%;
+}
+
+/* SLIDER PHOTOS GALLERY */
+
+
+/* SLIDER PHOTOS GALLERY */
+
+
+
+.container {
+  padding-top: 0;
+  margin-top: 0; /* Removes any top margin */
+}
+
+.video-wrapper {
+ margin-top: 0;
+ padding-top: 0;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the logo */
+  width: 600px; /* Adjust the size as needed */
+  height: auto; /* Maintains aspect ratio */
+  z-index: 10; /* Ensures it appears above the video */
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;  /* Ensures video fills the space */
+}
+
+.content{
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  line-height: 1.8;
+  font-size: 20px;
+  color:rgb(66, 66, 66);
+  margin-top: 100px;
+
+}
+.space{
+  letter-spacing: 2px;
+}
+.intro{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  opacity: 0.6;
+}
+.vl {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: -30px;
+}
+.vl2 {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+}
+
+.aboutus1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 170px;
+  margin-bottom: 70px;
+  opacity: 0.6;
+}
+.textaboutus {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  line-height: 1.8;
+  font-size: 20px;
+  color:rgb(66, 66, 66);
+  margin-top: 30px;
+}
+
+
+.gallery1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 120px;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+.gallery {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.gallery-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+
+.gallery1 {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106, 104, 104);
+  margin-top: 120px;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+
+.gallery-section {
+  list-style-type: none; /* Remove default numbering */
+  display: flex;
+  justify-content: center; /* Center the images in each section */
+  gap: 20px; /* Space between images */
+  margin-bottom: 40px; /* Space between sections */
+  padding: 0;
+}
+
+.gallery-section li {
+  display: inline-block; /* Ensure images are inline */
+}
+
+
+.gallery-section img {
+  width: 100%;
+  max-width: 300px; /* Adjust the size of the images */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+  transition: transform 0.3s ease; /* Optional: Hover effect */
+}
+
+.gallery-section img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.vl3 {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: -40px;
+}
+.classes1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 200px;
+  margin-bottom: 100px;
+  opacity: 0.6;
+}
+
+.classes {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 20px; /* Space between rows */
+  margin: 50px auto;
+  margin-right: 250px; /* Space from the left */
+}
+
+
+
+.class-item {
+  display: flex; /* Align image and text horizontally */
+  align-items: flex-start; /* Align text to the top of the image */
+  gap: 20px; /* Space between the image and text */
+  margin-top: -10px; /* Add spacing between rows */
+}
+
+.classes-image {
+  width: 350px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+  margin-left: 200px; /* Space from the left */
+}
+
+.class-text-container {
+  display: flex;
+  flex-direction: column; /* Stack title and description vertically */
+  gap: 15px; /* Space between title and description */
+
+  padding: 15px; /* Add padding inside the container */
+  margin-bottom: 70px; /* Add spacing above the text */
+}
+
+.class-title {
+  font-size: 22px; /* Larger font size for the title */
+
+  color: rgb(44, 44, 44); /* Darker color for the title */
+  text-transform: uppercase; /* Make the title uppercase */
+  letter-spacing: 1px; /* Add spacing between letters */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+.class-description {
+  font-size: 17px; /* Smaller font size for the description */
+  color: rgb(100, 100, 100); /* Slightly lighter color for the description */
+  line-height: 1.8; /* Adjust line height for readability */
+  margin: 0; /* Remove unnecessary margins */
+  text-align: left; /* Center the text */
+
+}
+
+.book-now-button {
+  margin: 100px auto; /* Center the button */
+  padding: 10px 20px; /* Adjust padding for the button */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255); /* Button text color */
+  background-color: rgb(44, 44, 44); /* Button background color */
+  border: 1px solid rgb(200, 200, 200); /* Add a border */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s ease; /* Smooth hover effect for text */
+  margin-bottom: 40px; /* Add spacing below the button */
+}
+
+.book-now-button:hover {
+  background-color: rgb(66, 66, 66); /* Darker background on hover */
+}
+
+
+.members1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 170px;
+  margin-bottom: 100px;
+  opacity: 0.6;
+}
+
+.vl4 {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: 40px;
+}
+.vl5 {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: -10px;
+}
+.memberships1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 170px;
+  margin-bottom: 50px;
+  opacity: 0.6;
+}
+.memberships {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  line-height: 1.8;
+  font-size: 20px;
+  color:rgb(66, 66, 66);
+  margin-bottom: 100px;
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.membership-photo {
+  width: 85%;
+  display: block;
+  margin-left: 60px; /* Center the image */
+}
+
+.membership-logo {
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 600px; /* Adjust size as needed */
+
+}
+
+.membership-button {
+  display: inline-block;
+  margin-top: 20px; /* Add spacing above the button */
+  padding: 10px 20px; /* Adjust padding for the button */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Raleway", sans-serif;
+  color: white; /* Button text color */
+  background-color: rgb(44, 44, 44); /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.membership-button:hover {
+  background-color: rgb(66, 66, 66); /* Darker background on hover */
+}
+
+.vl6 {
+  border-left: 1px solid rgb(106, 104, 104);
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-top: -50px;
+}
+
+.contactus1{
+  text-align: center;
+  font-size: 15px;
+  color: rgb(106,104,104);
+  margin-top: 200px;
+  margin-bottom: 100px;
+  opacity: 0.6;
+}
+.join{
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 20px;
+  color:rgb(66, 66, 66);
+  margin-bottom: 100px;
+}
+
+.confirmation-text {
+  font-size: 14px; /* Adjust font size */
+  color: rgb(106, 104, 104); /* Match the color of other text */
+  opacity: 0.6; /* Add slight transparency */
+  font-family: "Raleway", sans-serif; /* Ensure consistent font */
+  margin-right: 50;
+}
+.email-input {
+  width: 300px; /* Adjust the width of the input box */
+  padding: 10px; /* Add padding inside the input box */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid rgb(200, 200, 200); /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default focus outline */
+}
+
+.email-input:focus {
+  border-color: rgb(44, 44, 44); /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(44, 44, 44, 0.5); /* Add a subtle shadow on focus */
+}
+
+.subscribe-button {
+  padding: 10px 20px; /* Adjust padding for the button */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Raleway", sans-serif;
+  color: rgb(66, 66, 66); /* Button text color */
+  background-color: rgb(255, 255, 255); /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s ease; /* Smooth hover effect for text */
+}
+
+.subscribe-button:hover {
+  color: rgb(16, 135, 48); /* Change text color on hover */
+}
+.email-instruction {
+  text-align: center; /* Center-align the text */
+  font-size: 16px; /* Adjust font size */
+  color: rgb(106, 104, 104); /* Match the color of other text */
+  margin-bottom: -10px; /* Add spacing below the text */
+  font-family: "Raleway", sans-serif; /* Ensure consistent font */
+  margin-right: 319px; /* Center the text */
+  margin-left: 150px;
+}
+.contact2{
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 243px;
+  font-size: 17px;
+  color:rgb(66, 66, 66);
+  margin-bottom: 100px;
+  line-height: 1.8;
+  margin-top: 70px;
+}
+
+
+/* Add this to styles.css */
+.contact-form {
+  margin-top: -75px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 600px; /* Center the form and limit its width */
+  background-color: rgb(255, 255, 255); /* Light background for the form */
+
+}
+
+.contact-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(66, 66, 66); /* Match the text color */
+  margin-bottom: 5px; /* Space between label and input */
+  font-family: "Raleway", sans-serif; /* Consistent font */
+}
+
+/* Style for the contact form inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 300px; /* Match the width of the email input */
+  padding: 10px; /* Add padding inside the input box */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Raleway", sans-serif; /* Consistent font */
+  border: 1px solid rgb(200, 200, 200); /* Add a border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default focus outline */
+  background-color: #fff; /* White background */
+  margin-bottom: 15px; /* Space between fields */
+  display: block; /* Ensure inputs are block-level elements */
+  margin-left: auto; /* Center the input */
+  margin-right: auto; /* Center the input */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-family: "Raleway", sans-serif; /* Set the font to Raleway */
+  font-size: 16px; /* Adjust font size */
+  color: rgb(106, 104, 104); /* Match the color of other text */
+  opacity: 0.6; /* Set the opacity */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgb(44, 44, 44); /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(44, 44, 44, 0.5); /* Add a subtle shadow on focus */
+}
+
+.contact-form textarea {
+  height: 120px; /* Set a fixed height for the message box */
+  resize: none; /* Prevent resizing */
+}
+
+/* Style for the submit button */
+.contact-form .submit-button {
+  padding: 10px 20px; /* Adjust padding for the button */
+  font-size: 16px; /* Adjust font size */
+  font-family: "Raleway", sans-serif; /* Consistent font */
+  color: rgb(66, 66, 66); /* Button text color */
+  background-color: rgb(255, 255, 255); /* Button background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s ease; /* Smooth hover effect for text */
+  display: block; /* Center the button */
+  margin: 20px auto; /* Center the button with spacing */
+}
+
+.contact-form .submit-button:hover {
+  color: rgb(16, 135, 48); /* Change text color on hover */
+}
+
+.contact-form-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(66, 66, 66); /* Match the text color */
+  margin-bottom: 20px; /* Space below the title */
+  font-family: "Raleway", sans-serif; /* Consistent font */
+}
+
+
+.footer {
+  position: sticky; /* Makes the footer sticky */
+  bottom: 0; /* Sticks the footer to the bottom of the viewport */
+  background-color: rgb(255, 255, 255); /* Background color for the footer */
+  padding: 20px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center-align the content */
+  z-index: 9999; /* Ensures the footer stays above other elements */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Add space between the icons */
+  margin-top: 20px; /* Add space above the icons */
+}
+.fa {
+  padding: -20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+/* Add a hover effect if you want */
+.facebook-icon:hover {
+  color: rgb(0,118,230); /* Change Facebook icon color to blue on hover */
+}
+
+.instagram-icon:hover {
+  color: rgb(225,39,104); /* Change Instagram icon color to red on hover */
+}
+
+.footer-text {
+  text-align: center; /* Center-align the text */
+  font-size: 14px; /* Adjust font size */
+  color: rgb(106, 104, 104); /* Match the color of other text */
+  margin-bottom: -10px; /* Add space above the footer text */
+  font-family: "Raleway", sans-serif; /* Ensure consistent font */
+  opacity: 0.8; /* Slight transparency for a subtle look */
+}
+
+
+/* Responsive navigation bar */
+
+@media(max-width: 800px) {
+  .hideOnMobile {
+    display: none; /* Hide elements on mobile */
+  }
+  .menu-button{
+    display:block; /* Show the menu button on mobile */
+  }
+}
+@media(max-width: 800px) {
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  nav li:first-child {
+    margin-left: 20px; /* Move TIERRA closer to the left */
+    padding-right: 0; /* Remove unnecessary padding */
+  }
+}
+@media (max-width: 480px) {
+  nav ul.nav-list li:nth-child(2) {
+    display: none; /* Hide the HOME link on mobile */
+  }
+}
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100%; /* Ensure the body doesn't exceed the viewport width */
+}
+
+/* Ensure all elements stay within the viewport */
+* {
+  box-sizing: border-box; /* Include padding and border in element width/height */
+}
+
+/* Ensure the menu button stays within the viewport */
+
+@media (max-width: 800px) {
+  .menu-button {
+    top: 10px; /* Adjust for smaller screens */
+    right: 50px; /* Adjust for smaller screens */
+  }
+}
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto; /* Centers the content */
+}
+
+/* Adjust styles for tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+  .topnav a {
+    font-size: 14px; /* Reduce font size */
+    padding: 10px; /* Adjust padding */
+  }
+  .gallery-section {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+    gap: 20px;
+  }
+
+  .gallery-section img {
+    max-width: 100%; /* Make images full-width on smaller screens */
+  }
+
+  .logo {
+    height: 40px; /* Make the logo smaller */
+  }
+
+  .video-wrapper video {
+    width: 100%; /* Make the video take full width */
+  }
+
+  .content {
+    margin-left: 20px;
+    margin-right: 20px; /* Reduce margins for smaller screens */
+  }
+}
+
+/* Adjust styles for mobile phones (screen width 480px and below) */
+@media (max-width: 480px) {
+  .topnav {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start;
+  }
+
+  .topnav a {
+    font-size: 12px; /* Further reduce font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .logo {
+    height: 30px; /* Make the logo even smaller */
+  }
+
+  .gallery-section {
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Add spacing between images */
+  }
+
+  .gallery-section img {
+    max-width: 100%; /* Make images full-width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .content {
+    font-size: 14px; /* Reduce font size for content */
+  }
+  .logo-overlay {
+    display: none; /* Hide the logo on mobile devices */
+  }
+}
+
+
+/* Make the navbar responsive */
+
+
+
+
+/* Make the video responsive */
+.responsive-video {
+  width: 100%; /* Make the video take up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the video covers the container */
+}
+
+
+/* Responsive styles for About Us, Classes, and Memberships sections */
+@media (max-width: 768px) {
+  .aboutus1, .classes1, .memberships1 {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    margin-top: 50px; /* Adjust spacing */
+    margin-bottom: 30px;
+  }
+
+  .textaboutus, .classes, .memberships {
+    margin-left: 20px; /* Reduce left margin */
+    margin-right: 20px; /* Reduce right margin */
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height */
+  }
+
+  .classes-image {
+    width: 100%; /* Make images full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .class-item {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align items */
+    gap: 10px; /* Adjust spacing */
+  }
+
+  .membership-photo {
+    width: 100%; /* Make images full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .membership-logo {
+    width: 80%; /* Adjust size for smaller screens */
+    top: 0; /* Adjust position */
+    transform: translate(-50%, 0); /* Center horizontally */
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus1, .classes1, .memberships1 {
+    font-size: 12px; /* Further reduce font size for phones */
+    margin-top: 30px; /* Adjust spacing */
+    margin-bottom: 20px;
+  }
+
+
+  .textaboutus, .classes, .memberships {
+    margin-left: 10px; /* Reduce left margin */
+    margin-right: 10px; /* Reduce right margin */
+    font-size: 14px; /* Adjust font size for readability */
+    line-height: 1.4; /* Adjust line height */
+  }
+
+  .classes-image {
+    width: 100%; /* Make images full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .class-item {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align items */
+    gap: 5px; /* Adjust spacing */
+  }
+
+  .membership-photo {
+    width: 100%; /* Make images full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .membership-logo {
+    width: 70%; /* Adjust size for smaller screens */
+    top: 0; /* Adjust position */
+    transform: translate(-50%, 0); /* Center horizontally */
+  }
+}
+
+/* Adjust styles for mobile phones (screen width 480px and below) */
+@media (max-width: 480px) {
+  .contact2 {
+    margin-left: 10px; /* Reduce left margin */
+    margin-right: 10px; /* Reduce right margin */
+    font-size: 14px; /* Adjust font size for readability */
+    line-height: 1.4; /* Adjust line height */
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 50px; /* Adjust bottom margin */
+  }
+}
+
+/* Adjust styles for tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+  .contact2 {
+    margin-left: 20px; /* Reduce left margin */
+    margin-right: 20px; /* Reduce right margin */
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height */
+    margin-top: 30px; /* Adjust top margin */
+    margin-bottom: 70px; /* Adjust bottom margin */
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    margin-top: 0; /* Remove top margin for mobile */
+    padding-top: 0; /* Remove top padding for mobile */
+  }
+
+  .video-wrapper {
+    margin-top: 0; /* Remove top margin for mobile */
+    padding-top: 0; /* Remove top padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .vl, .vl1, .vl2, .vl3, .vl4, .vl5, .vl6 {
+    display: none; /* Hide all vertical lines on mobile */
+  }
+}
+@media (max-width: 1024px) {
+  .vl, .vl1, .vl2, .vl3, .vl4, .vl5, .vl6 {
+    display: none; /* Hide all vertical lines on iPad Pro */
+  }
+}
+@media (max-width: 1024px) {
+  .classes {
+    flex-direction: column; /* Stack rows vertically */
+    margin-left: 20px; /* Reduce left margin */
+    margin-right: 20px; /* Reduce right margin */
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 1.6; /* Adjust line height */
+  }
+
+  .class-item {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align items */
+    gap: 20px; /* Add spacing between image and text */
+    margin-top: 20px; /* Add spacing between rows */
+  }
+
+  .classes-image {
+    width: 100%; /* Make images full width */
+    margin-left: 0; /* Remove left margin */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .class-text-container {
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Add padding inside the container */
+  }
+}
+@media (max-width: 1024px) {
+  .membership-photo {
+    width: 90%; /* Increase the width for iPad Pro */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it is displayed as a block element */
+  }
+
+  .image-wrapper {
+    text-align: center; /* Center the image wrapper */
+    margin-top: 20px; /* Add spacing above the image */
+  }
+}
+@media (max-width: 768px) {
+  .membership-photo {
+    width: 70%; /* This might override the iPad Pro styles */
+  }
+}
+@media (max-width: 1024px) {
+  nav ul {
+    justify-content: flex-start; /* Align the navigation items to the left */
+    padding-left: 0px; /* Add some padding to the left */
+    margin-left: -20px; /* Add some margin to the left */
+  }
+
+  nav li {
+    margin-right: -30px; /* Add spacing between the items */
+  }
+
+  nav a {
+    text-align: left; /* Align the text to the left */
+  }
+}
+@media (max-width: 480px) {
+  .sidebar a.special-menu-item {
+    font-size: 30px; /* Adjust font size */
+    color: rgb(44, 44, 44); /* Change text color to red */
+    font-family: "Raleway", sans-serif; /* Set the font family */
+    margin-left: 110px; /* Adjust left margin */
+    margin-top: 40px; /* Adjust top margin */
+  }
+}
